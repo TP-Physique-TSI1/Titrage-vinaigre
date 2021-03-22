@@ -63,13 +63,13 @@ fig = plt.figure(figsize = (10, 10))                                            
 plt.gcf().subplots_adjust(left = 0.1, bottom = 0.1,
                        right = 0.9, top = 0.9, wspace = 0, hspace = 0.2)                    # Ajuste les valeurs des marges de la figure
 ax1 = fig.add_subplot(2,1,1)                                                                # Crée le premier graphe de la figure
-ax1.hist(tab_dilue, range = (, ), bins = 50, color = 'orange', edgecolor = 'black')        # Affiche l'histogramme de répartion des valeurs simulées de la pente
+ax1.hist(tab_dilue, range = (, ), bins = 50, color = 'orange', edgecolor = 'black')        # Affiche l'histogramme de répartion des valeurs simulées de la concentration en acide acétique du vinaigre dilué
 ax1.set_xlabel('Concentration en acide acétique du vinaigre dilué (mol/L) ')
 ax1.set_ylabel('effectif')
 ax1.set_title('Pour {} itérations'.format(nombre_essais))
 
 ax2 = fig.add_subplot(2,1,2)                                                                # Crée le deuxième graphe de la figure
-ax2.hist(tab_com, range = (, ), bins = 50, color = 'blue', edgecolor = 'black')       # Affiche l'histogramme de répartion des valeurs simulées de l'ordonnée à l'origine
+ax2.hist(tab_com, range = (, ), bins = 50, color = 'blue', edgecolor = 'black')       # Affiche l'histogramme de répartion des valeurs simulées de la concentration en acide acétique du vinaigre commercial
 ax2.set_xlabel("Concentration en acide acétique du vinaigre commercial (mol/L)")
 ax2.set_ylabel('effectif')
 ax2.set_title('Pour {} itérations'.format(nombre_essais))
